@@ -1,0 +1,27 @@
+---
+  title: Home
+  body_classes: home
+  meta_description:
+  meta_keywords:
+---
+
+%main{class:'news', role: 'main'}
+  %article
+    %div{class:'container-fluid'}
+      %div{class:'row justify-content-center'}
+        %div{class:'col-12 p-0 news__header'}
+          %div{class:'h1 text-center text-uppercase pt-4 news__title'}
+            News
+        %div{class:'col-10 mb-4 news__header__border'}
+    - (1..6).each do |i|
+      %div{class:'row justify-content-center news__brief'}
+        %div{class:'col-8 mt-4 pb-4 news__brief__border'}
+          %div{class:'h2 text-capitalize'}= lorem.words 9
+          %div{class:'mb-4 news__brief__meta'}
+            %span{class:'pr-2 news__brief__author'}
+              = lorem.words 2
+            %span{class:'pl-2 news__brief__date'}
+              November 22, 2018
+          %div{class:'news__brief__excerpt'}= lorem.sentences 3
+          %div{class:'pt-4 text-right news__brief__link'}
+            = link_to 'read more', '#'

@@ -1,0 +1,36 @@
+.news {
+  .news__header__border {
+    border-bottom: $black solid 2px;
+  }
+  .news__brief {
+    &:last-child {
+      .news__brief__border {
+        border-bottom: none;
+      }
+    }
+    .news__brief__border {
+      border-bottom: $black solid 1px;
+    }
+    .news__brief__meta {
+      font-size: .625rem;
+      .news__brief__author {
+        border-right: $black solid 1px;
+      }
+      .news__brief__date {
+        color: $purple;
+      }
+    }
+    .news__brief__link {
+      font-size: .875rem;
+      a{
+        display: block;
+        &:after {
+          font-family: FontAwesome;
+          content: '\f178';
+          margin-left: 15px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

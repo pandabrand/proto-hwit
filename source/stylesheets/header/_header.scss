@@ -1,0 +1,16 @@
+header {
+  button {
+    &.navbar-toggler {
+      font-size: 2.25rem;
+      padding: 1.5rem 1rem;
+    }
+  }
+  .navbar {
+    height: 100%;
+    .nav-item {
+      font-weight: bold;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+# Site wide settings
+site:
+  root_url: http://www.example.com
+  title: Heartland Women in Trades
+  title_separator: " &mdash; "
+  meta_description: Providing support for women in trades.
+  meta_keywords:
+    - women
+    - trades
+    - construction
+    - pipefitting
+    - electrical
+    - plumbing
+  author: HWIT
+  active_navigation_item_class: current
+  analytics_id: UA-XXXXXXX-XX
+
+# Author of CSS & JavaScript
+source:
+  author:
+    name: Frederick Wells
+    uri: http://pandabrand.net`

@@ -1,0 +1,22 @@
+---
+  title: Home
+  body_classes: home
+  meta_description:
+  meta_keywords:
+---
+
+%main{role: 'main'}
+  %article
+    %div{class:'container-fluid'}
+      %div{class:'row'}
+        %div{class:'col-12 p-0 page hero hero-image'}
+          =image_tag '/images/education-hero.jpg', {class:'img-fluid'}
+          %div{class:'gradient'}
+          %div{class:'hero__title text-center text-uppercase'}
+            Education
+          %div{class:'hero__subtitle text-center'}
+            = lorem.sentences 2
+      %div{class:'row justify-content-center'}
+        %div{class:'col-8 my-4 py-4'}
+          - (1..6).each do |i|
+            %p= lorem.paragraphs 2

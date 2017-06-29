@@ -1,0 +1,37 @@
+.hero {
+  &.hero-image {
+    position: relative;
+  }
+  .hero__title {
+    color: $white;
+    font-weight: bold;
+    position: absolute;
+    top: 26%;
+    font-size: 2.25rem;
+    width: 100%;
+    padding: 0 7.5%;
+    @include media-breakpoint-down(xs) {
+      top: 5%;
+      font-size: 1.75rem;
+    }
+    @media (max-width: 376px) {
+      font-size: 1.25rem;
+    }
+  }
+  .hero__subtitle {
+    color: $white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 45%;
+    font-size: 1.25rem;
+    width: 100%;
+    padding: 0 7.5%;
+    @include media-breakpoint-down(xs) {
+      bottom: 10%;
+    }
+    @media (max-width: 376px) {
+      font-size: .75rem;
+      line-height: 1.5;
+    }
+  }
+}

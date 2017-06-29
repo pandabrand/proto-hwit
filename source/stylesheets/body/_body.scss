@@ -1,0 +1,19 @@
+body {
+  font-family: $font-family-base;
+  color: $color__text-main;
+  a {
+    color: $color__link;
+    &:link, &:visited {
+      color: $color__link;
+    }
+    &:hover, &:active {
+      color: $color__link--active;
+      text-decoration: none;
+    }
+  }
+  p {
+    font-family: $font-family-base;
+    color: $color__text-main;
+    font-weight: normal;
+  }
+}

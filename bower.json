@@ -1,0 +1,18 @@
+{
+  "name": "middleman-basis",
+  "version": "1.1.0",
+  "description": "Middleman Basis - The foundation for any middleman site.",
+  "author": {
+    "name": "Patrik Affentranger",
+    "url": "http://patrikaffentranger.me"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/pzi/middleman-basis",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "latest",
+    "jquery": "^3.2.1",
+    "bootstrap": "v4.0.0-alpha.6",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}

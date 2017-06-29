@@ -1,0 +1,20 @@
+%header{role: "banner"}
+  %nav{class:'navbar navbar-custom navbar-toggleable-md', role: "navigation"}
+    %button{class:'navbar-toggler navbar-toggler-right collapsed', type:'button', 'data-toggle':'collapse', 'data-target':'#navbarNav', 'aria-controls':'navbarNav', 'aria-expanded':'false', 'aria-label':'Toggle navigation'}
+      %i{class:'fa fa-bars'}
+    = link_to '/', {class:'navbar-brand'} do
+      =image_tag '/images/hwit-logo.png', {srcset:'/images/hwit-logo.png 1x, /images/hwit-logo@2x.png 2x'}
+    %div{class:'navbar-collapse collapse mt-auto', id:'navbarNav'}
+      %ul{class:'nav navbar-nav ml-auto'}
+        %li{class:'nav-item mx-4'}
+          = link_to "About", "education.html"
+        %li{class:'nav-item mx-4'}
+          = link_to "Education", "education.html"
+        %li{class:'nav-item mx-4'}
+          = link_to "Support", "education.html"
+        %li{class:'nav-item mx-4'}
+          = link_to "Resources", "education.html"
+        %li{class:'nav-item mx-4'}
+          = link_to "News", "news.html"
+        %li{class:'nav-item mx-4'}
+          = link_to "Contact", "education.html"

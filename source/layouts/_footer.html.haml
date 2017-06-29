@@ -1,0 +1,20 @@
+%footer{role: "contentinfo", class:'container-fluid'}
+  %div{class:'row justify-content-between'}
+    %div{class:'col-6 col-md-2'}
+      = image_tag '/image/hwit-logo.png', {class:'img-fluid', srcset:'/images/hwit-logo.png 1x, /images/hwit-logo@2x.png 2x'}
+    %div{class:'col-6 col-md-4 col-lg-3'}
+      %div{class:'d-flex flex-row'}
+        = link_to '#', {class:'pr-4'} do
+          %i{class:'fa fa-envelope'}
+        = link_to '#', {class:'pr-4'} do
+          %i{class:'fa fa-facebook'}
+        = link_to '#', {class:'pr-4'} do
+          %i{class:'fa fa-twitter'}
+      %div{class:'footer__address'}
+        Heartland Women in Trades
+        %br/
+        1234 Fake St, Anytown, ST 12345
+        %br/
+        123-999-9999
+        %br/
+        &copy; #{Time.now.year} #{data.config.site.title}

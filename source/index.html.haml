@@ -1,0 +1,28 @@
+---
+  title: Home
+  body_classes: home
+  meta_description:
+  meta_keywords:
+---
+
+%main{role: 'main'}
+  %article
+    %div{class:'container-fluid'}
+      %div{class:'row'}
+        %div{class:'col-12 p-0 hero hero-image'}
+          =image_tag '/images/home-hero.png', {class:'img-fluid', srcset:'/images/home-hero.png 1x, /images/home-hero@2x.png 2x', width:'100%'}
+          %div{class:'gradient'}
+          %div{class:'hero__title text-center text-uppercase'}
+            Heartland Women in Trades
+          %div{class:'hero__subtitle text-center'}
+            Committed to advocating for women in the trades through education, leadership, and mentorship
+      %div{class:'row'}
+        %div{class:'col-12 col-md-6 home__feature'}
+          = link_to 'news.html', {class:'home__link d-flex justify-content-center align-items-center px-4'} do
+            %div= lorem.sentence
+        %div{class:'col-12 col-md-6 home__feature'}
+          = link_to 'education.html', {class:'home__link d-flex justify-content-center align-items-center px-4'} do
+            %div= lorem.sentence
+      %div{class:'row'}
+        %div{class:'col-12 home__cta'}
+          = link_to 'Join Us', '/', {class:'home__link d-flex justify-content-center align-items-center p-6'}
